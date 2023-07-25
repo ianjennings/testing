@@ -1,0 +1,10 @@
+<script type="text/javascript">
+var p = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    var isItFulfilled = false
+    isItFulfilled ? resolve('!Resolved') : reject('!Rejected')
+  }, 1000)  
+})
+
+p.then(result => console.log(result))
+</script>
