@@ -1,0 +1,13 @@
+<script type="text/javascript">
+let startTime = new Date().getTime();
+
+setInterval(() => {
+  
+  console.log(new Date().getTime() - startTime)
+
+  let xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "./README.md", true);
+  xhttp.send();
+
+}, 1000)
+</script>
